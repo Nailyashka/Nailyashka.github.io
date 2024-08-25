@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=PlayfairDisplay&display=swap);
+
+body{
+    font-family: PlayfairDisplay,serif;
+    background: radial-gradient(#001df5 0%, #222020 100%);
+}
+p{
+    color: aqua;
+}
+
+.nav-link{
+    color: aqua;
+}
+.navbar-nav .nav-link.active{
+    color:rgb(117, 127, 127);
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+.navbar-toggler{
+    background-color: rgb(117, 127, 127);
+}
+
+.sidebar{
+    color: aqua;
+    background: radial-gradient(#001df5 0%, #222020 100%);
+
+}
+.card{
+    background: linear-gradient(0deg, #000000 0%, #1c96ca 100%);
+    color: aqua;
+}
+.card a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.slaid-text,
+.footer-text{
+    color: aqua;
+    /* Отцентруем текст по центру по x и по y */
+    margin: auto auto;
+}
+footer,
+.btn-outline-primary{
+    background: radial-gradient(#001df5 0%, #222020 100%);
+
+}
+
+.media-footer{
+    display: flex;
+    /* Выровнит по горизонтале */
+    justify-content: center;
+    /* Выровнит по вертикале */
+    align-items: center;
+}
+.call-anim{
+    animation: call 2s linear 0s 1 normal forwards;
+}
+@keyframes call {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+@media(max-width:755px) {
+    .carousel-indicators{
+        display: none;
+    }
+}
